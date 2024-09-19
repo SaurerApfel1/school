@@ -24,6 +24,6 @@ public class steigung {
 
         int steigung = (y2-y1)/(x2-x1);
 
-        System.out.println("Die Steigung der Graden beträgt "+steigung+".");
+        System.out.println("Die Steigung der Grade beträgt "+steigung+".");
         }
     }
