@@ -1,4 +1,4 @@
-package Privat.arrays;
+package Privat.Arrays;
 
 import java.util.Arrays;
 import java.util.List;

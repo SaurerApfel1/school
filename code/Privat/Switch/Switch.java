@@ -1,4 +1,4 @@
-package Privat;
+package Privat.Switch;
 
 import java.util.Random;
 

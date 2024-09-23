@@ -1,4 +1,4 @@
-package Privat.klassen;
+package Privat.Klassen;
 
 import java.util.Scanner;
 

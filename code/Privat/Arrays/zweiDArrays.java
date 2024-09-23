@@ -1,4 +1,4 @@
-package Privat.arrays;
+package Privat.Arrays;
 
 public class zweiDArrays {
 
