@@ -1,8 +1,8 @@
-package Privat;
+package Privat.GUI;
 
 import javax.swing.*;
 
-public class Gui {
+public class jPane {
     @SuppressWarnings("unused")
     public static void main(String[] args) {
         boolean run = true;
