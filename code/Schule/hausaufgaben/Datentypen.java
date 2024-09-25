@@ -34,6 +34,5 @@ public class Datentypen {
         else    {
             System.out.println("Gib eine gültige Antwort ein...");
         }
-
     }
 }

@@ -10,9 +10,9 @@ public class Verkaufspreis {
         System.out.print("Einkaufspreis: ");
         double einkaufsPreis = scan.nextDouble();
 
-        double selbstkostenPreis = calcSelbstkostenpreis(einkaufsPreis);
-        double bruttoPreis = calcBruttopreis(selbstkostenPreis);
-        double nettoPreis = calcNettopreis(bruttoPreis);
+        double selbstkostenPreis = calcSteuern(einkaufsPreis, 1.40);
+        double bruttoPreis = calcSteuern(selbstkostenPreis, 1.05);
+        double nettoPreis = calcSteuern(bruttoPreis, 1.19);
 
         System.out.printf("Selbstkosten: %.2f€\n", selbstkostenPreis);
         System.out.printf("Bruttopreis: %.2f€\n", bruttoPreis);
@@ -20,14 +20,7 @@ public class Verkaufspreis {
 
 
     }
-
-    public static double calcSelbstkostenpreis(double einkaufsPreis) {
-        return einkaufsPreis*1.4;
-    }
-    public static double calcBruttopreis(double selbstkosten) {
-        return selbstkosten*1.05;
-    }
-    public static double calcNettopreis(double brutto) {
-        return brutto*1.19;
+    public static double calcSteuern(double betrag, double percent) {
+        return betrag * percent;
     }
 }
