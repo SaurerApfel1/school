@@ -1,4 +1,4 @@
-package Schule.hausaufgaben;
+package Schule.Kapitel._02_DatentypenVariablen;
 
 import java.util.Scanner;
 

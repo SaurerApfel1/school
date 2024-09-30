@@ -1,8 +1,8 @@
-package Schule.unterricht;
+package Schule.Kapitel._02_DatentypenVariablen;
 
 import java.util.Scanner;
 
-public class steigung {
+public class Steigung {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
