@@ -1,4 +1,4 @@
-package Schule.Kapitel._03_VerzwSchleifen;
+package Schule.Kapitel._03_VerzweigungenSchleifen;
 
 import java.util.Scanner;
 
