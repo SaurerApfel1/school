@@ -11,15 +11,15 @@ public class Quadrat {
         String zeichen = scan.next();
 
         System.out.print("Geben Sie die Reihen an: ");
-        int rows = scan.nextInt();
+        int reihe = scan.nextInt();
 
         System.out.print("Geben Sie die Spalten an: ");
-        int columns = scan.nextInt();
+        int spalte = scan.nextInt();
 
-        for (int i = 0; i < rows;) {
+        for (int i = 0; i < reihe;) {
             i++;
             System.out.println();
-            for (int j =0; j < columns;) {
+            for (int j =0; j < spalte;) {
                 j++;
                 System.out.print(zeichen);
             }

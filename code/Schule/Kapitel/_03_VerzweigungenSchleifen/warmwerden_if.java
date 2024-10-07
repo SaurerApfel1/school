@@ -2,7 +2,7 @@ package Schule.Kapitel._03_VerzweigungenSchleifen;
 
 import java.util.Scanner;
 
-public class IfStatements {
+public class warmwerden_if {
     public static void main(String[] args) {
         System.out.print("Geben Sie ihr Budget ein: ");
         Scanner scanner = new Scanner(System.in);

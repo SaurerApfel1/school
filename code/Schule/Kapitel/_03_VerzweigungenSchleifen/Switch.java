@@ -11,9 +11,11 @@ public class Switch {
 
         Scanner scan1 = new Scanner(System.in);
         System.out.println("<<Quiz Multiple-Choice>>\n\n");
-        System.out.print("Welcher Datentyp wird verwendet um Ganzzahlen zu speicher:\nA) double  B) float  \nC) int     D) String\nAntwort: ");
+        System.out.print("Welcher Datentyp wird verwendet um Ganzzahlen zu speichern:\nA) double  B) float  \nC) int     D) String\nAntwort: ");
         String a1 = scan1.nextLine();
         a1 = a1.toUpperCase();
+
+        boolean run = true;
 
 
         switch (a1){
@@ -23,6 +25,9 @@ public class Switch {
             case "C":
                 punkte +=1;
                 System.out.println("\nRichtig!!!\nPunktestand: "+punkte);
+                break;
+            default:
+                System.out.println("Falsche Eingabe...");
         }
 
 
@@ -33,12 +38,15 @@ public class Switch {
 
 
         switch (a2) {
-            case "A", "C", "D":
+            case "A", "B", "D":
                 System.out.println("\nFalsch...\nPunktestand: " + punkte);
                 break;
-            case "B":
+            case "C":
                 punkte += 1;
                 System.out.println("\nRichtig!!!\nPunktestand: " + punkte);
+                break;
+            default:
+                System.out.println("Falsche Eingabe...");
         }
 
 
@@ -55,6 +63,9 @@ public class Switch {
             case "B":
                 punkte += 1;
                 System.out.println("\nRichtig!!!\nPunktestand: " + punkte);
+                break;
+            default:
+                System.out.println("Falsche Eingabe...");
         }
 
 
