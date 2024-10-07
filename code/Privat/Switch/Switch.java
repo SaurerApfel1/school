@@ -29,12 +29,15 @@ public class Switch {
         }
         boolean guessed = false;
 
+        int guessCount = 0;
+
         while (!guessed) {
             Scanner scan = new Scanner(System.in);
             System.out.print("Schüler erratet seine Note: ");
             int guess = scan.nextInt();
+            guessCount += 1;
             if (guess==wuerfel) {
-                System.out.println("Erraten!!!");
+                System.out.println("Erraten!!!Sie haben es beim "+guessCount+" mal erraten.");
                 guessed = true;
             }
             else {
