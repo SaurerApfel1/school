@@ -1,4 +1,4 @@
-package Schule.Kapitel._03_VerzweigungenSchleifen;
+package Schule.Kapitel._03_VerzweigungenSchleifen.Aufgabe_01;
 
 import java.util.Scanner;
 
