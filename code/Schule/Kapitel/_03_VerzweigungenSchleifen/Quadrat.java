@@ -24,6 +24,5 @@ public class Quadrat {
                 System.out.print(zeichen);
             }
         }
-
     }
 }
