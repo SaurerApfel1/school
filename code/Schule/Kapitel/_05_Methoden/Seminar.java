@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Seminar {
 
 
-    public static int checkRange(int points, int count){
-        if (points>10){
+    public static int setRange(int min, int max, int points, int count){
+        if (points>max){
             System.out.println("Deine Punkte können nicht mehr als 10 sein...");
         }
-        else if (points<0){
+        else if (points<min){
             System.out.println("Deine Punkte können nicht weniger als 0 sein...");
         }
         else {
@@ -28,6 +28,9 @@ public class Seminar {
         int punkteHausarbeit = 0;
         int punkteVortrag = 0;
 
+        int min = 0;
+        int max = 10;
+
 
         Scanner scan = new Scanner(System.in);
         int count = 0;
@@ -39,7 +42,7 @@ public class Seminar {
                 System.out.print("Wie viele Punkte hast du in der Hausarbeit erreicht (0-10): ");
                 punkteHausarbeit = scan.nextInt();
 
-                count = checkRange(punkteHausarbeit, count);
+                count = setRange(min, max, punkteHausarbeit, count);
             }
 
             else if (count==1){
@@ -48,7 +51,7 @@ public class Seminar {
                 punkteVortrag = scan.nextInt();
 
 
-                count = checkRange(punkteVortrag, count);
+                count = setRange(min, max, punkteVortrag, count);
             }
 
             else if (count==2){
