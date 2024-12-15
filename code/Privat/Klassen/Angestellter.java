@@ -18,7 +18,7 @@ public class Angestellter {
     }
 
     public double raiseLohn(double Lohn, int percent) {
-        return lohn + ((lohn/100)*100);
+        return lohn + ((lohn/100)*percent);
     }
 
 }
