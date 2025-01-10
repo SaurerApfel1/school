@@ -1,14 +1,30 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.io.PrintStream,printf,java.lang.foreign.Arena,ofAuto,java.lang.foreign.Arena,global,java.lang.ClassLoader,getResourceAsStream" />
+    </inspection_tool>
     <inspection_tool class="CanBeParameter" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
     <inspection_tool class="CommentedOutCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="minLines" value="15" />
     </inspection_tool>
+    <inspection_tool class="ConstantValue" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="REPORT_CONSTANT_REFERENCE_VALUES" value="false" />
+    </inspection_tool>
+    <inspection_tool class="EnhancedSwitchMigration" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myMaxNumberStatementsForBranch" value="1" />
+    </inspection_tool>
     <inspection_tool class="ExtractMethodRecommender" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="maxParameters" value="1" />
     </inspection_tool>
+    <inspection_tool class="ManualMinMaxCalculation" enabled="true" level="INFORMATION" enabled_by_default="true" editorAttributes="INFORMATION_ATTRIBUTES" />
+    <inspection_tool class="StringConcatenationInLoops" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnreachableCode" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnusedAssignment" enabled="true" level="INFORMATION" enabled_by_default="true" editorAttributes="INFORMATION_ATTRIBUTES">
+      <option name="REPORT_PREFIX_EXPRESSIONS" value="false" />
+      <option name="REPORT_POSTFIX_EXPRESSIONS" value="true" />
+      <option name="REPORT_REDUNDANT_INITIALIZER" value="true" />
+    </inspection_tool>
     <inspection_tool class="WriteOnlyObject" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" checkParameterExcludingHierarchy="false">
       <option name="LOCAL_VARIABLE" value="true" />
