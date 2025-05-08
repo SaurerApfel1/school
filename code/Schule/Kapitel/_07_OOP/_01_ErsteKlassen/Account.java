@@ -1,4 +1,4 @@
-package Schule.Kapitel._07_OOP.HA_1_ErsteKlassen;
+package Schule.Kapitel._07_OOP._01_ErsteKlassen;
 
 
 public class Account {

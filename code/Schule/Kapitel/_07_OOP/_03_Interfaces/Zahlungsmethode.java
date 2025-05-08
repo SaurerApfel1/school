@@ -1,4 +1,4 @@
-package Schule.Kapitel._07_OOP.HA_3_Interfaces;
+package Schule.Kapitel._07_OOP._03_Interfaces;
 
 public interface Zahlungsmethode {
 

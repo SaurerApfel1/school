@@ -1,26 +1,30 @@
-package Schule.Kapitel._07_OOP.HA_3_Interfaces;
+package Schule.Kapitel._07_OOP._03_Interfaces;
 
-public class PayPal implements Zahlungsmethode {
-    String email;
+public class KreditKarte implements Zahlungsmethode{
+    String kreditkartenNummer;
+    String besitzer;
     double kontostand = 0;
 
-    public PayPal(String email) {
-        this.email = email;
+    public KreditKarte(String kreditkartenNummer, String besitzer) {
+        this.kreditkartenNummer = kreditkartenNummer;
+        this.besitzer = besitzer;
     }
 
     @Override
     public void bezahlen(double betrag) {
-        // TODO Auto-generated method stub
         if (istGueltig(betrag)) {
             kontostand += betrag;
-            System.out.println("Bezahlung mit PayPal: " + betrag + "€ auf dein Konto");
-            System.out.println("Neuer Kontostand: " + kontostand + "€");
+            System.out.println("Du zahlst " + betrag + "€ auf dein Konto ein.");
+            System.out.println("Neuer Kontostand: " + kontostand + "€");    
             System.out.println();
+
         }
     }
 
     @Override
     public boolean istGueltig(double betrag) {
+        // TODO Auto-generated method stub
+
         if (betrag < 0) {
             System.out.println("Betrag muss positiv sein!");
             return false;
@@ -29,19 +33,15 @@ public class PayPal implements Zahlungsmethode {
             return false;
         } else {
             System.out.println("Betrag ist gültig!");
-            
             return true;
-        }
-        // TODO Auto-generated method stub
-        
-    }
+        }    }
 
     @Override
     public void besitzerDetails() {
         // TODO Auto-generated method stub
-        System.out.println("PayPal-Besitzer: " + email);
+        System.out.println("Besitzer: " + besitzer);
+        System.out.println("Kreditkarten-Nummer: " + kreditkartenNummer);
         System.out.println("Kontostand: " + kontostand + "€");
-       
     }
 
 }

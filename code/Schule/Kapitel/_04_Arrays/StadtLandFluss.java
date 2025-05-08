@@ -49,7 +49,6 @@ public class StadtLandFluss {
 
         Random rand = new Random();
         Scanner scan = new Scanner(System.in);
-        Scanner scanCheck = new Scanner(System.in);
 
         boolean run = true;
 
@@ -85,7 +84,6 @@ public class StadtLandFluss {
 
             System.out.println();
 
-            int j = 1;
             while (run1){
                 punkte = addPoints(stadt, punkte, "Stadt");
                 punkte = addPoints(land, punkte, "Land");

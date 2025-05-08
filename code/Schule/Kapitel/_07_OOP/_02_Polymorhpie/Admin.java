@@ -1,4 +1,4 @@
-package Schule.Kapitel._07_OOP.HA_2_Polymorhpie;
+package Schule.Kapitel._07_OOP._02_Polymorhpie;
 
 import java.util.Scanner;
 
